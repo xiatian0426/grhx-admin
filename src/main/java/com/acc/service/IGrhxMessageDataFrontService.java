@@ -30,5 +30,6 @@ public interface IGrhxMessageDataFrontService extends IBaseService<GrhxMessageDa
 	 * @throws Exception
 	 */
 	GrhxMessageDataFront getById(Map<String, Object> map) throws Exception;
-	
+
+	void deleteByMap(Map<String, Object> map) throws Exception;
 }

@@ -61,7 +61,13 @@ public class GrhxMessageDataServiceImpl extends BaseServiceImpl<GrhxMessageData>
 		// TODO Auto-generated method stub
 		return grhxMessageDataMapper.getByMessagetype(map);
 	}
-	
+
+	@Override
+	public List<GrhxMessageData> getByMessagetypeNum (Map<String, Object> map) throws SelectException{
+		// TODO Auto-generated method stub
+		return grhxMessageDataMapper.getByMessagetypeNum(map);
+	}
+
 	@Override
 	public List<GrhxMessageData> getByMap(Map<String, Object> map) throws SelectException {
 		return grhxMessageDataMapper.getByMap(map);
